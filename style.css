@@ -1,0 +1,345 @@
+/*-----------------------------------HEADER-----------------------------------*/
+
+:root{
+    --background:linear-gradient(135deg,#667eea7e 0% , #764ba298 100%);
+    --color-primary:#667eea;
+    --color-secondary:#764ba2;
+    --boton-padding: 20px 40px;
+}
+
+body {
+    font-family: 'Raleway' , sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 70px 0 ;
+    max-width: 1200 px;
+}
+
+.subtitle {
+    color: var(--color-primary);
+    font-size: 2,5 rem;
+    margin-bottom: 35px;
+}
+
+.hero {
+    height: 60vh;
+    background-image: var(--background), url('Imagenes/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.hero .container{
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 70 px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.nav__items {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+}
+
+.nav__items--cta {
+    border: 1px solid #fff;
+
+}
+
+.nav__items--footer {
+    border: 1px, solid #fff;
+    padding: 10px;
+}
+
+.hero__container {
+    display: flex;
+    height: calc(60vh - 70px);
+    align-items: center;
+    color: #fff;
+}
+
+.hero__text {
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.hero__title {
+    font-size: 3.2 rem;
+}
+
+.hero__subtitle {
+    font-size: 2 rem;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+.hero__cta {
+    display: inline-block;
+    background-color: #fff;
+    padding: var(--boton-padding);
+    color: var(--color-primary);
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+.hero__wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+/*-----------------------------------ABOUT-----------------------------------*/
+
+.presentation {
+    padding-top: 0;
+    text-align: center;
+}
+
+.presentation__picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.presentation__copy {
+    width: 80%;
+    margin:0 auto;
+}
+
+.presentation__cta {
+    display: inline;
+    margin-top: 30px;
+    background: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+    padding: var(--boton-padding);
+    border-radius: 40px;
+    margin-bottom: 30px;
+}
+
+.about {
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+}
+
+.about__img {
+    text-align: center;
+}
+
+.about__text{
+    padding:20px;
+}
+
+.about__img--left {
+    text-align: left;
+}
+
+.about__picture{
+    max-width: 80%;
+    height: 600px;
+}
+
+.about__paragraph{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/*-----------------------------------PROJECTS-----------------------------------*/
+
+.projects{
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.projects__grid{
+    display: grid;
+    height: 800px;
+    grid-template-areas: 
+    "img1 img3"
+    "img2 img4";
+    gap: 10px;
+
+}
+
+.img{
+    width: 100%;
+}
+
+.projects__item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.projects__img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.projects__hover{
+    position: absolute;
+    background: #4240418c;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+    cursor: pointer;
+    transition:transform .3s ease-in-out;
+}
+
+.projects__item:hover .projects__hover{
+    transform: translateX(0%);
+
+}
+
+.projects__icon {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+/*-----------------------------------TESTIMONIES-----------------------------------*/
+
+.testimony__grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.testimony__item{
+    width: 95%;
+    margin: 0 auto;
+    background-color: var(--color-secondary);
+    box-shadow: 0 8px 10px rgba(66,66,66,66,.6);
+    border-radius: 7px;
+    padding: 30px 25px;
+    color: #fff;
+    margin-bottom: 50px;
+
+}
+
+.testimony__img{
+    width: 400px; 
+    height: 400px; 
+    align-content: center;
+}
+/*-----------------------------------HELP-----------------------------------*/
+/*-----------------------------------FORM-----------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+header .header{
+  background-color: #fff;
+  height: 45px;
+}
+header a img{
+  width: 134px;
+margin-top: 4px;
+}
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.login-page .form .login{
+  margin-top: -31px;
+margin-bottom: 26px;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: #328f8a;
+  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+
+/*-----------------------------------FOOTER-----------------------------------*/
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+  
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  
+  
